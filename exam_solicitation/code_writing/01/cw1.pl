@@ -7,7 +7,7 @@ my @array = ( 'coconut milk', 'octopus', 'oregano', 'prawns', 'onion powder',
               'salsa', 'rice vinegar', 'vinegar', 'sour cream', 'cauliflower', 
               'cucumbers', 'cloves' );
               
-my @filtered = grep(/[aeiou]{2,}/, @array);
+my @filtered = grep(/[aeiou]{2,}/i, @array);
 
 for my $item (@filtered) {
     say $item;
